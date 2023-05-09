@@ -16,6 +16,9 @@
 		9FAEFF0F2306D505007EE885 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEFF0E2306D505007EE885 /* main.m */; };
 		9FAEFF192306D505007EE885 /* JTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEFF182306D505007EE885 /* JTests.m */; };
 		9FAEFF242306D505007EE885 /* JUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEFF232306D505007EE885 /* JUITests.m */; };
+		9FAEFF352306DD66007EE885 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEFF342306DD66007EE885 /* Word.m */; };
+		9FAEFF382306E044007EE885 /* WordFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEFF372306E044007EE885 /* WordFactory.m */; };
+		9FAEFF41230B514F007EE885 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEFF40230B514F007EE885 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		9FAEFF1F2306D505007EE885 /* JUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAEFF232306D505007EE885 /* JUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JUITests.m; sourceTree = "<group>"; };
 		9FAEFF252306D505007EE885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FAEFF332306DD66007EE885 /* Word.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		9FAEFF342306DD66007EE885 /* Word.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		9FAEFF362306E044007EE885 /* WordFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordFactory.h; sourceTree = "<group>"; };
+		9FAEFF372306E044007EE885 /* WordFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordFactory.m; sourceTree = "<group>"; };
+		9FAEFF3F230B514F007EE885 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9FAEFF40230B514F007EE885 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +113,12 @@
 		9FAEFEFB2306D504007EE885 /* J */ = {
 			isa = PBXGroup;
 			children = (
+				9FAEFF322306DB00007EE885 /* UI */,
+				9FAEFF312306DAEE007EE885 /* Class */,
 				9FAEFEFC2306D504007EE885 /* AppDelegate.h */,
 				9FAEFEFD2306D504007EE885 /* AppDelegate.m */,
 				9FAEFEFF2306D504007EE885 /* SceneDelegate.h */,
 				9FAEFF002306D504007EE885 /* SceneDelegate.m */,
-				9FAEFF022306D504007EE885 /* ViewController.h */,
-				9FAEFF032306D504007EE885 /* ViewController.m */,
-				9FAEFF052306D504007EE885 /* Main.storyboard */,
 				9FAEFF082306D505007EE885 /* Assets.xcassets */,
 				9FAEFF0A2306D505007EE885 /* LaunchScreen.storyboard */,
 				9FAEFF0D2306D505007EE885 /* Info.plist */,
@@ -135,6 +143,29 @@
 				9FAEFF252306D505007EE885 /* Info.plist */,
 			);
 			path = JUITests;
+			sourceTree = "<group>";
+		};
+		9FAEFF312306DAEE007EE885 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				9FAEFF332306DD66007EE885 /* Word.h */,
+				9FAEFF342306DD66007EE885 /* Word.m */,
+				9FAEFF362306E044007EE885 /* WordFactory.h */,
+				9FAEFF372306E044007EE885 /* WordFactory.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		9FAEFF322306DB00007EE885 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9FAEFF022306D504007EE885 /* ViewController.h */,
+				9FAEFF032306D504007EE885 /* ViewController.m */,
+				9FAEFF052306D504007EE885 /* Main.storyboard */,
+				9FAEFF3F230B514F007EE885 /* MainViewController.h */,
+				9FAEFF40230B514F007EE885 /* MainViewController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +230,7 @@
 		9FAEFEF12306D504007EE885 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "崔泰毓";
 				TargetAttributes = {
 					9FAEFEF82306D504007EE885 = {
@@ -267,8 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FAEFF382306E044007EE885 /* WordFactory.m in Sources */,
+				9FAEFF352306DD66007EE885 /* Word.m in Sources */,
 				9FAEFF042306D504007EE885 /* ViewController.m in Sources */,
 				9FAEFEFE2306D504007EE885 /* AppDelegate.m in Sources */,
+				9FAEFF41230B514F007EE885 /* MainViewController.m in Sources */,
 				9FAEFF0F2306D505007EE885 /* main.m in Sources */,
 				9FAEFF012306D504007EE885 /* SceneDelegate.m in Sources */,
 			);
@@ -351,6 +385,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -409,6 +444,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -439,15 +475,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y76WY4666S;
 				INFOPLIST_FILE = J/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.J";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -456,15 +495,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y76WY4666S;
 				INFOPLIST_FILE = J/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.J";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
